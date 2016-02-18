@@ -1,10 +1,16 @@
 # Procedures for Obtaining Tidy Data Set.
 
-The enclosed file run_analysis.R contains the code used to obtain the final tidy data set with averages for each variable, activity and subject. Placing the file "run_analysis.R" and Running source("run_analysis.R") in R Studio will download and extract the original files and will create a new file TidyData.txt in your working directory.
+The enclosed file run_analysis.R contains the code used to obtain the final tidy data set with averages for each variable, activity and subject. Placing the file "run_analysis.R" and Running source("run_analysis.R") in the working directory of R Studio will download and extract the original files and will create a new file TidyData.txt.
+
+The columns included in the output file are listed below:
+
+subject_id - The id of the experiment participant.
+activity_labels - The name of the activity that the measurements correspond to, like LAYING or WALKING.
+All of the following fields represent the mean of recorded data points for the given subject and activity. The detailed description of the different measurement types can be found in the features_info.txt file included in the data zip file.
 
 The file TidyData.txt includes the following variables:
-"subject"
-"activity"
+"subject" - the id of each subject included in the data
+"activity" - the type of activity each subject engaged in (laying, standing, sitting, walking, walking downstairs, walking upstairs)
 "timeBodyAccelerometer mean X"
 "timeBodyAccelerometer mean Y"
 "timeBodyAccelerometer mean Z"
